@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Métodos</title>
+</head>
+<body>
+	<script>
+		
+		var lista = ["vermelho", "azul", "verde", "branco"];
+        var tmp;
+
+        function lista_array(vetor){
+            for(var i=0; i < vetor.length; i++){
+                document.write(vetor[i] + " | ");
+            }
+        }
+        
+        
+        lista_array(lista);
+        document.write(" -> LIST<br>");
+        
+        // inverte aordem dos elementos do array
+		tmp = lista.reverse();
+        lista_array(tmp);
+        document.write(" -> INVERT<br>");
+        
+        // Ordena os elementos do array 
+		lista_array(lista.sort());
+        document.write(" -> SORT<br>");
+        
+        // adiciona elementos no fim do array
+        lista.push("castanho", "laranja");
+		lista_array(lista);
+        document.write(" -> ADD END<br>");
+
+        // Adiciona elementos no início do array
+        lista.unshift("Laranja", "Roxo");
+        lista_array(lista);
+        document.write(" -> ADD BEGIN<br>");
+        
+        // remove no início do array
+		lista.shift();
+        lista_array(lista);
+        document.write(" -> REMOVE BEGIN<br>");
+        
+        
+        // remove no fim do array
+		lista.pop();	
+        lista_array(lista);
+		document.write(" -> REMOVE END");
+
+	</script>
+</body>
+</html>

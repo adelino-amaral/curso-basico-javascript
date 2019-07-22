@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Estrutura if</title>
+</head>
+<body>
+	<script>
+	
+		// IIFE Immediately Invoked Function Expression (iify)
+
+		/*
+			trata-se de uma função anónima. Para que seja do tipo iify
+			ficará entre parênteses ()
+			para executar a função inserimos os parênteses no fim } --> ()  );
+		*/
+		(function(){
+			document.write("Sou uma função");
+		}());
+
+		document.write("<br><br>");
+
+		(function(a, b){
+			document.write("A soma é " + (a+b));
+		}(3, 6));
+
+
+		document.write("<br><br>");
+
+		// não do tipo iify
+		var msg = function(){
+			return"Sou uma função";
+		}
+		document.write(msg());
+
+		document.write("<br><br>");
+
+		// do tipo iify
+		var mensagem = (function(){
+			return "Sou uma função";
+		}());
+		document.write(mensagem);
+	</script>
+</body>
+</html>

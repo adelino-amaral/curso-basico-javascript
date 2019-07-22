@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Cuidado com os Métodos</title>
+</head>
+<body>
+	<p id="info"></p>
+	<p id="cuidado"></p>
+
+	<script>
+		var aluno = {
+			nome: "Adelino",
+			apelido: "Amaral",
+			turma: "I",
+			ano: "10",
+
+			nomeCompleto: function(){
+				return this.nome + " " + this.apelido;
+			},
+
+			verAnoTurma: function(){
+				return this.ano + this.turma;
+			},
+
+			verTurma: function() {
+				return this.turma;
+			}
+		};
+
+		document.getElementById('info').innerHTML = aluno.nomeCompleto() + " pertence à turma " + aluno.verAnoTurma();
+
+		// Caso o método não tenha () !!!
+		document.getElementById('cuidado').innerHTML = "Cuidado com o resultado: " + aluno.verTurma;
+	</script>
+</body>
+</html>

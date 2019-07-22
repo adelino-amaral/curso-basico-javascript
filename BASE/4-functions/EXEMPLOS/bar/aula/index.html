@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#box {
+    height: 250px;
+    width: 250px;
+    overflow: auto;
+}
+
+#content {
+    height: 800px;
+    width: 2000px;
+    background-color: coral;
+}
+</style>
+</head>
+<body>
+    <!--
+        retirado de: 
+        https://www.w3schools.com/jsreF/tryit.asp?filename=tryjsref_element_scrollleft
+    -->
+    <p>Visualiza as coordenadas do Scroll dentro da div.</p>
+
+    <div id="box" onscroll="getCoordenate()">
+      <div id="content">Scroll inside me!</div>
+    </div>
+
+    <p id="view"></p>
+
+<script>
+    
+    /*
+        The scrollTop property set or return the number of pixels an element's content is scrolled vertically.
+        The scrollLeft property set or return the number of pixels an element's content is scrolled horizontally.
+
+        Tip: To add scrollbars to an element, use the CSS "overflow" property.
+
+        Tip: The onscroll event occurs when an element's scrollbar is being scrolled.
+    */
+    
+    
+    // a função getCoordenate é executada sempre que o scroll se move
+    function getCoordenate() {
+        var elmnt = document.getElementById("box");
+        var x = elmnt.scrollLeft;
+        var y = elmnt.scrollTop;
+        
+        document.getElementById ("view").innerHTML = "Horizontal: " + x + "px<br>Vertical: " + y + "px";
+    }
+</script>
+
+</body>
+</html>

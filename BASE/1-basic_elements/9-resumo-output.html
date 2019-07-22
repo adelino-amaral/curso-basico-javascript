@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+   
+    <p></p>
+    <p></p>
+
+    <p id="texto"> </p>
+    <p class="str"></p>
+    <p class="str"></p>
+
+    <p class="intro"></p>
+    <p id="intro"></p>
+
+    <script type="text/javascript">
+        let p1 = "Redes de Comunicação";
+        let p2 = "Curso de GPSI";
+        let p3 = "Emídio Navarro";
+        
+        // seleciona o primeiro parágrafo
+        document.getElementsByTagName('p')[0].innerHTML = p1;
+        // seleciona o segundo parágrafo
+        document.getElementsByTagName('p')[1].innerHTML = p1 + " - Viseu";
+
+        // seleciona o identificador texto
+        document.getElementById('texto').innerHTML = p2;
+
+        // seleciona a primeira classe str
+        document.getElementsByClassName("str")[0].innerHTML = p3;
+        // seleciona a segunda classe str
+        document.getElementsByClassName("str")[1].innerHTML = p3 + " - Viseu";
+
+        // seleciona classes e identificadores
+        document.querySelectorAll("p.intro")[0].innerHTML = "class intro"
+        document.querySelectorAll("p#intro")[0].innerHTML = "id intro"
+
+        // querySelector() devolve o primeiro elemento selecionado no documento
+        document.querySelector(".intro").style.backgroundColor = "red";
+        document.queryselector("#intro").style.backgroundcolor = "green";
+    </script>
+</body>
+</html>

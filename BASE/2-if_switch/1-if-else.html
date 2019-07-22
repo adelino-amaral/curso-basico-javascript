@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>IF</title>
+</head>
+<body>
+
+    <div id="msg"></div>
+    <div id="opcao"></div>
+
+    <script>
+        
+        // Muda os valores da variável para realizares testes à estrutura IF
+        let idade
+        idade = prompt("Insira um número");
+        idade = parseInt(idade);
+        
+        if(idade >= 18)
+        {
+            document.getElementById("msg").innerHTML = "És um adulto";
+        }
+        
+        if(idade < 18)
+        {
+            document.getElementById("msg").innerHTML = "Ainda não és adulto";   
+        }
+
+        idade = idade + 5;
+        
+        // outro processo
+        if(idade >= 18)
+        {
+            document.getElementById("opcao").innerHTML = "És um adulto";
+        }
+        else  {
+            document.getElementById("opcao").innerHTML = "Ainda não és adulto";   
+        }
+        
+    </script>
+</body>
+</html>

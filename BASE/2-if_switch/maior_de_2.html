@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="resultado"></div>
+    <script>
+        let maior
+        let num1 = prompt("Digite um número inteiro:")
+        let num2 = prompt("Digite um número inteiro diferente do anterior:")
+        num1 = parseInt(num1)
+        num2 = parseInt(num2)
+        if(num1 > num2)
+        {
+            maior = num1;
+        }
+        else{
+            maior = num2;
+        }
+        document.getElementById("resultado").innerHTML = "O maior dos dois números é <b>" + maior + "<b>";
+    </script>
+</body>
+</html>

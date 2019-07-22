@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dia da semana</title>
+</head>
+<body>
+    
+    <p class="diasemana"></p>
+    
+    <script>
+        // cria uma data
+        let hoje = new Date();
+        let diaSemana = hoje.getDay();
+        let diaSem = "";
+        
+        if(diaSemana == 0){diaSem = "Domingo";}
+        if(diaSemana == 1){diaSem = "Segunda-Feira";}
+        if(diaSemana == 2){diaSem = "Terça-Feira";}
+        if(diaSemana == 3){diaSem = "Quarta-Feira";}
+        if(diaSemana == 4){diaSem = "Quinta-Feira";}
+
+        /* complete o exercício */
+
+        document.getElementsByClassName("diasemana")[0].innerHTML = "Hoje é: " + diaSem;
+
+    </script>
+</body>
+</html>

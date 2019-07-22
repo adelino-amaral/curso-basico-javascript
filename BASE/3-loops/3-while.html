@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>while</title>
+</head>
+<body>
+    
+    <p id="mostra"></p>
+    <script>
+        // declaração e inicialização de variáveis
+        var contador = 1, testa = true, guarda="";
+        
+        while(contador <= 10 && testa)
+        {
+            // guarda o valor da interação anterior
+            document.getElementById('mostra').innerHTML += contador + "<br>";
+
+            if (contador == 8)
+            {
+                // a variável testa passa a false para interromper o ciclo
+                testa = false; 
+            }
+
+            contador = contador + 1;    // mesmo que contador++;
+        }
+    </script>
+</body>
+</html>

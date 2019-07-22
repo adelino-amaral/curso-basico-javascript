@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>while</title>
+</head>
+<body>
+    
+    <script>
+        /*
+            Observa o output e compara-o com o seguinte código
+        */
+        var contador = 1;
+        while(contador < 10){
+            
+            if(contador == 5) {
+                contador = contador + 1;
+                continue;
+            }
+            
+            /*
+                a instrução "continue;" remete para o início do ciclo sem executar as
+                instruções seguintes.
+            */
+            
+            document.write(contador + "<br>");
+            contador = contador + 1;
+        }
+    </script>
+</body>
+</html>

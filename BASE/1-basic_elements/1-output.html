@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>JavaScript</title>
+</head>
+<body>
+
+	<p id="info">Esta é a informação</p>
+	
+	<!--
+		Observe a ordem da interpretação dos elementos é muito importante.
+	-->
+
+	<script>
+        /*
+            Comentário de várias linhas.
+            
+            Diferentes formas de enviar informação para o browser. Estes métodos estão descritos
+            na página: https://www.w3schools.com/jsref/dom_obj_document.asp
+        */
+        
+        // este é um comentário de linha.
+        
+        // envia a string para o browser.
+        document.write("Olá Mundo");
+        
+        // acescenta a tag h1
+        document.write("<h1>Olá Mundo</h1>");
+        
+        // escreve a string no parágrafo id=info
+		document.getElementById("info").innerHTML = "Exemplo de JavaScript";
+        
+        // envia a string para a consola.
+        console.log("Módulo de JavaScript");
+        
+        // a string é enviada para uma caixa no browser.
+        alert("Olá Turma");
+	</script>
+
+	<!--
+		Outro local onde poderiamos colocar o javascript seria dentro da tag head.
+	-->
+</body>
+</html>

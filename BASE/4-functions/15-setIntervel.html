@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>setInterval</title>
+</head>
+<body>
+	<script>
+		
+		/*
+		// executa a função imprimir em cada 2 segundos
+		setInterval(imprimir, 2000);
+
+		function imprimir(){
+			document.write("Atividade em teste <br>");
+		}
+
+		*/
+
+
+		var contador = 1;
+		var executar = setInterval(imprimir, 2000);
+
+		function imprimir(){
+			document.write("Contador: " + contador + " <br>");
+			contador++;
+
+			// depois de 5 repetições termina a contagem
+			if(contador == 6){
+				clearInterval(executar);
+			}
+		}
+	</script>
+</body>
+</html>

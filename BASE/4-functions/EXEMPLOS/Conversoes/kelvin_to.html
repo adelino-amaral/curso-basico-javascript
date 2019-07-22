@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	Convert from Kelvin to Fahrenheit	℉=((K-273.15)*1.8)+32
+	Convert from Kelvin to Celsius	℃=K-273.15
+
+<h2>Temperature Converter</h2>
+<p>Type a value in the Kelvin field to convert the value to Fahrenheit:</p>
+
+<p>
+  <label>Kelvin</label>
+  <input id="inputKelvin" type="number" placeholder="Kelvin" oninput="temperatureConverter(this.value)" onchange="temperatureConverter(this.value)">
+</p>
+<p>Fahrenheit: <span id="outputFahrenheit"></span></p>
+
+<script>
+function temperatureConverter(valNum) {
+  valNum = parseFloat(valNum);
+  document.getElementById("outputFahrenheit").innerHTML=((valNum-273.15)*1.8)+32;
+}
+</script>
+
+
+
+<h2>Temperature Converter</h2>
+<p>Type a value in the Kelvin field to convert the value to Celcius:</p>
+
+<p>
+  <label>Kelvin</label>
+  <input id="inputKelvin" type="number" placeholder="Kelvin" oninput="temperatureConverter(this.value)" onchange="temperatureConverter(this.value)">
+</p>
+<p>Celcius: <span id="outputCelcius"></span></p>
+
+<script>
+function temperatureConverter(valNum) {
+  valNum = parseFloat(valNum);
+  document.getElementById("outputCelcius").innerHTML=valNum-273.15;
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<div class="example">Este div tem class="example".</div>
+
+<div class="example">Este segundo div tem class="example".</div>
+
+<script>
+
+    var x = document.getElementsByClassName("example");
+    
+    x[0].innerHTML = "Hello World!";    // x[0] representa a primeira classe
+    x[0].style.color = "red";
+    x[0].style.lineHeight = "3";
+    
+	x[1].innerHTML = "Boa tarde!";     // x[1] representa a segunda  classe
+    x[1].style.color = "blue";
+</script>
+
+</body>
+</html>
+

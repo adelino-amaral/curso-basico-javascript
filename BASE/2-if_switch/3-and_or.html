@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Estrutura if</title>
+</head>
+<body>
+	<div id="info1"></div>
+	<div id="info2"></div>
+	<div id="info3"></div>
+
+	<script>
+		
+		let idade
+        idade = prompt("Insira um número");
+        idade = parseInt(idade);
+
+		const pi = 3.14;
+
+		const elemento1 = document.getElementById("info1");
+		const elemento2 = document.getElementById("info2");
+
+		if( idade  == 18 && idade < 20 ){
+			document.getElementById("info1").innerHTML = "Ambas as condições são verdadeiras<br>";
+		} else {
+			document.getElementById("info1").innerHTML = "Uma ou ambas as condições são falsas.<br>";
+		}
+
+
+
+		if( idade  == 10 || idade < 20 ){
+			elemento2.innerHTML = "Uma das condições é verdadeira<br>";
+		} else {
+			elemento2.innerHTML = "As condições são falsas.<br>";
+		}
+	</script>
+</body>
+</html>

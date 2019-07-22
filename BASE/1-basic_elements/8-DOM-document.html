@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>DOM Object</title>
+</head>
+<body>
+
+	<div id="info">Olá</div>
+	<div id="modificado"></div>
+	
+	<script>
+
+		/*
+			HTML - DOM Object
+            http://javascript.info/browser-environment
+			https://www.w3schools.com/jsref/dom_obj_document.asp
+
+			DOM styles
+			https://www.w3schools.com/jsref/dom_obj_style.asp
+
+			referência ao identificador info
+		*/
+
+		var data = document.lastModified;
+        
+		document.getElementById("modificado").innerHTML = data;
+		document.getElementById("modificado").style.fontSize = "1.5em";
+		document.getElementById("modificado").style.fontFamily = "Impact,Charcoal,sans-serif";
+		document.getElementById("modificado").style.width = "300px";
+		document.getElementById("modificado").style.border = "1px solid #0000FF";
+ 
+ 		var titulo = document.title;
+		var elemento = document.getElementById('info');
+		elemento.innerHTML = "O titulo da página é " + titulo;
+		elemento.style.color = "blue";
+		elemento.style.fontSize = "2em";
+
+	</script>
+</body>
+</html>

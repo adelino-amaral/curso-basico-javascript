@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>getElementById</title>
+</head>
+<body>
+
+	<div id="info">Olá</div>
+	<script>
+		/*
+			HTML DOM Style Object
+			https://www.w3schools.com/jsref/dom_obj_style.asp
+		*/
+ 
+        // referência ao identificador info
+		var elemento  = document.getElementById('info');
+        
+        // referência à tag body
+        var corpo     = document.body;
+        
+		elemento.innerHTML = "ESEN";
+        elemento.style.fontFamily = "Arial,Impact,sans-serif";    // define o tipo de letra
+		elemento.style.color = "red";                             // define a cor do texto
+		elemento.style.fontSize = "3em";                          // define o tamanho da letra
+        elemento.style.marginTop = "30px";
+        elemento.style.marginLeft = "50px";
+
+        
+        corpo.style.background = "#f3f3f3 url('imgs/imagem1.png') no-repeat right top";
+        corpo.style.backgroundSize ="400px 200px";
+        corpo.style.backgroundColor = "#CCC";
+        corpo.style.border = "4px solid blue";
+        corpo.style.width = "100%";
+        corpo.style.height = "220px";
+	</script>
+</body>
+</html>

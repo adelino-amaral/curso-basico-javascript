@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Conversor - Fahrenheit para Celsius ou para Kelvin</title>
+</head>
+<body>
+	<h1>Converor de Fahrenheit para Celsius	℃=(℉-32)/1.8</h1>
+	<p>Digite um valor em Fahrenheit:</p>
+	<p>
+		<label>Fahrenheit</label>
+		<input id="inputFahrenheit" 
+			type="number" 
+			placeholder="Fahrenheit" 
+			oninput="Fahrenheit_Celsius_Converter(this.value)" 
+			onchange="Fahrenheit_Celsius_Converter(this.value)">
+	</p>
+	<p>Conversão em Celcius: <span id="outputCelcius"></span></p>
+
+
+	<h1>Conversor de Fahrenheit para Kelvin	K=((℉-32)/1.8)+273.15</h1>
+	<p>Digite um valor em Fahrenheit:</p>
+	<p>
+  		<label>Fahrenheit</label>
+  		<input id="inputFahrenheit" 
+  			type="number" 
+  			placeholder="Fahrenheit" 
+  			oninput="Fahrenheit_Kelvin_Converter(this.value)" 
+  			onchange="Fahrenheit_Kelvin_Converter(this.value)">
+	</p>
+	<p>Conversão em Kelvin: <span id="outputKelvin"></span></p>
+
+
+
+	<script>
+		function Fahrenheit_Celsius_Converter(valNum) {
+			valNum = parseFloat(valNum);
+			document.getElementById("outputCelcius").innerHTML=(valNum-32)/1.8;
+		}
+
+		function Fahrenheit_Kelvin_Converter(valNum) {
+		  valNum = parseFloat(valNum);
+		  document.getElementById("outputKelvin").innerHTML=((valNum-32)/1.8)+273.15;
+		}
+	</script>
+
+</body>
+</html>

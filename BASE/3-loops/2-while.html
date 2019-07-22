@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>while</title>
+</head>
+<body>
+    
+    <script>
+        // declaração e inicialização de variáveis
+        var contador = 1, testa = true, guarda="";
+        
+        while(contador <= 10 && testa)
+        {
+            // a variável guarda vai guardar todos os valores do contador
+            guarda = guarda + contador + "<br>";
+
+            if (contador == 8)
+            {
+                // a variável testa passa a false para interromper o ciclo
+                testa = false; 
+            }
+
+            contador = contador + 1;    // mesmo que contador++;
+        }
+
+        // depois de percorrer o ciclo while, a seguinte instrução
+        // visualiza no browser o conteúdo da variável guarda.
+        document.write(guarda);
+    </script>
+</body>
+</html>

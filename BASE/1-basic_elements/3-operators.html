@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Operadores Aritméticos</title>
+</head>
+<body>
+
+	<p id="info"></p>
+
+	<script>
+
+		/*
+			As statements são contituídas por: valores, operadores, expressões,
+			palavras reservadas e por comentários.
+		
+			Existem dois tipos de valores: os fixos e os variáveis.
+			Os valores fixos são chamados de literais (literals):
+				10.1
+				"Adelino"
+
+			As variáveis são uasadas para guardar valores, os seus valores podem mudar.
+				 x = 1;
+
+			A palavra reservada "var" permite declarar variáveis.
+				var x;
+	
+			Todos os identificadores são case sensitive, isto é, "var" é diferente de "Var"
+            
+            Valores inteiro ou integer
+            1, 2, 3, 4, 5, .....
+            
+            Valores reais ou float
+            1.73
+            
+            Boolean
+            true, false
+		*/
+
+		/*
+			Devem ser escolhidos bons nomes para as variáveis,
+			nomes que representam o objetivo da variável.
+		*/
+
+		let x;
+		x = 10;
+		let y = 20;
+		let soma = x + y;
+		var diferenca = y - x;
+		var multiplicacao = x * y;
+		var divisao = y / x;
+		var resto = y % x;
+
+		console.log(divisao);
+        document.write(divisao);
+
+		/*
+			o javascript ignora os espaços em branco.
+		*/
+
+		var posicao = 10;
+		posicao = posicao + 5;
+        document.write("<br>Valor da variável posição: ", posicao);
+		posicao = posicao - 5;
+        document.write("<br>Valor da variável posição: ", posicao);
+        
+        // Mostra no browser os valores das variáveis
+		posicao = 20;
+		posicao = posicao * 2;
+		posicao = posicao / 2;
+
+		posicao = 10;
+		posicao++;	// 10 + 1 = 11		--> posicao = posicao + 1
+		posicao--;	// 11 - 1 = 10		--> posicao = posicao - 1
+
+		var numero1 = 4;
+		var numero = 2;
+		numero *= numero1;	// numero = numero * numero1; => numero = 2 * 4
+        // cria exemplos utilizando os outros operadores
+        
+        
+        document.write("<br>");
+        // concatenação de strings, o mesmo que dizer: juntar strings
+        var nome_curto = "Adelino";
+        var idade = 20;
+        document.write(nome_curto + " tem " + idade + " anos.");
+
+
+		// Podes declarar várias variáveis de uma só vez, separadas por vírgulas.
+		var nome = "Adelino", apelido = "Amaral";
+		var nome_abreviado = nome + " " + apelido;
+        document.write("<br>" + nome_abreviado);
+
+		/*
+			os nomes das variáveis não podem ter espaços. Para os simular usa o caracter _ (underscore)
+		*/
+
+		document.getElementById("info").innerHTML = "<h1>" + numero + "</h1>";
+		
+		/*
+			Identificadores (identifiers) são nomes que identificão variáveis, palavras reservadas (keywords),
+			funções (functions) e etiquetas (labls).
+			Ao longo do módulo irás compreender melhor estes identificadores.
+		*/
+
+
+		/*	
+			Podes declarar variáveis sem valor. Mais tarde podes atribuir um valor a esta variável.
+			Se redeclarares uma variável esta perde o valor anterior.
+		*/
+		
+		x = "308";
+        console.log("x=" + x);
+
+	</script>
+
+	
+</body>
+</html>

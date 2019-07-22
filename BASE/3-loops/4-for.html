@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>For</title>
+</head>
+<body>
+    
+    <div id="lista"></div>
+
+    <script>
+        // referência ao elemento cuja tag é identificada por lista
+        let elemento = document.getElementById('lista');
+        
+        // a instrução contador = contador + 1 é equivalente a contador++
+        for(var contador=1; contador <= 50; contador = contador + 1)
+        {
+            elemento.innerHTML += contador + "<br>";
+        }
+
+    </script>
+</body>
+</html>

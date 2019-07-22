@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>foreach</title>
+</head>
+<body>
+	<script>
+		
+		var frutas = ["pera", "maçã", "laranja", "uva"];
+        
+        for(let item of frutas)
+        {
+            document.write(item + "<br>");
+        }
+
+        document.write("<br><br>");
+		frutas.forEach(function(fruta, indice){
+			document.write(indice + " => " + fruta + "<br>");
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>setTimeout</title>
+</head>
+<body>
+
+	<p>Depois de clicar no botão Começar irá aparecer um alert passados 5 segundos.
+	Entre os 5 segundo pode parar a contagem clicando no botãoReter.</p>
+	<button onclick="comecar();">Começar</button>
+	<button onclick="deter()">Reter</button>
+
+	<script>
+		/*
+		function mensagem(){
+			document.write("Isto é uma prova");
+		}
+
+
+		setTimeout(mensagem, 3000);
+		*/
+
+		var executar;
+
+		function comecar(){
+			executar = setTimeout(function(){
+				alert("Olá");
+			}, 5000);
+		}
+
+		function deter(){
+			clearTimeout(executar);
+		}
+	</script>
+</body>
+</html>

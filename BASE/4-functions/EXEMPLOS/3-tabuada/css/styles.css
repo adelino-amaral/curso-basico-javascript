@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    width: 300px;
+    height: 420px;
+    margin-top: 50px;
+    margin-left: 200px;
+    background-color: beige;
+    padding-top: 20px;
+}
+
+#container h3, #container #num{
+     margin: 8px;
+     height: 20px;
+}
+
+#container h3{
+    width: 80%;
+    text-align: center;
+}
+
+#container #num{
+    width: 100px;
+}
+
+
+#container h3, #container #tabuada, #container #num{
+    margin-left: 15px;
+}
+
+button{
+    width: 30px;
+    height: 30px;;
+}

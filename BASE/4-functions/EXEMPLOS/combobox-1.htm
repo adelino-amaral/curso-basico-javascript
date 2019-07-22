@@ -1,0 +1,34 @@
+<!DOCTYPE HTML>
+<head>
+	<meta http-equiv="content-type" content="text/html" />
+	<meta name="author" content="lolkittens" />
+
+	<title>Untitled 1</title>
+</head>
+
+<body>
+
+<script>
+function jumpto(x){
+
+if (document.form1.jumpmenu.value != "null") {
+	document.location.href = x
+	}
+}
+</script>
+
+<form name="form1">
+<select name="jumpmenu" onChange="jumpto(document.form1.jumpmenu.options[document.form1.jumpmenu.options.selectedIndex].value)">
+<option>Jump to...</option>
+<option value=http://www.google.pt>Google</option>
+<option value=http://www.quackit.com/javascript/>JavaScript</option>
+<option value=http://www.quackit.com/html/>HTML</option>
+<option value=http://www.quackit.com/css/>CSS</option>
+<option value=http://www.quackit.com/sql/tutorial/>SQL</option>
+<option value=http://www.quackit.com/database/tutorial/>Database Tutorial</option>
+<option value=http://www.quackit.com/web_hosting/>Web Hosting Tutorial</option>
+</select>
+</form>
+
+</body>
+</html>

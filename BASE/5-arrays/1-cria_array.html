@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Array</title>
+</head>
+<body>
+   <!--  
+      Podes encontrar mais informação em:
+       https://www.w3schools.com/js/js_arrays.asp 
+    -->
+   <p id="carros"></p>
+   <p id="nomes"></p>
+   <p id="fruta"></p>
+   
+    <script>
+        var carros = [
+            "Saab",
+            "Volvo",
+            "BMW"
+        ];
+        
+        // os valores do array podem ser de tipos diferentes
+        var fruto = ["Maça", "médio", 1.4];
+        
+        // outra sintaxe de criar um array
+        var nomes = new Array("Abel", "Pedro", "Raul");
+        
+        // acesso a todos os elementos separados por vírgulas
+        document.getElementById("carros").innerHTML = carros;
+        document.getElementById("nomes").innerHTML = nomes;
+        document.getElementById("fruta").innerHTML = frutos;
+        
+    </script>
+    
+    
+    <p id="demo"></p>
+    <p id="fruta"></p>
+    
+    <script>
+        // acesso a elementos individuais
+        document.getElementById("demo").innerHTML = "O carro " + carros[1] + " pertence ao " + nomes[0];
+        document.getElementById("fruta").innerHTML = "O carro " + carros[2] + " transporta " + fruto[0] + " com tamanho " + fruto[1] + " custando " + fruto[2] + "€ por quilo";
+    </script>
+</body>
+</html>

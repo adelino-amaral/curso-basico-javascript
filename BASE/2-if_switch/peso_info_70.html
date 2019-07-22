@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="nome">Nome: </div>
+    <div id="resultado"></div>
+    <div>O programa vai terminar</div>
+
+    <script>
+        let nome, frase;
+        let cxnome = document.getElementById("nome");
+        let resultado = document.getElementById("resultado");
+
+        nome = prompt("Digite o seu nome:", "nome...");
+        peso = prompt("Digite o seu peso:", "peso..");
+
+        cxnome.innerHTML = cxnome.innerHTML + nome;
+        peso = parseFloat(peso);
+
+        dif = 70 - peso;
+        
+        if(peso < 70)
+        {
+            frase = "Falta ao " + nome + " " + dif + " Kg para atingir os 70Kg";
+            resultado.innerHTML = frase;
+        }
+    </script>
+</body>
+</html>

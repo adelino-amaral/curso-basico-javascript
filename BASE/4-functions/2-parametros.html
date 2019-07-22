@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Passagem de valores à função</title>
+</head>
+<body>
+    <input type="text" id="num1"><br>
+    <input type="text" id="num2"><br>
+    
+	<input type="button" value="Calcular 1" id="calcular">
+    <div id="info"></div>
+
+	<script>
+        
+        var btcalcular = document.getElementById("calcular");
+        let n1 = document.getElementById("num1");
+        let n2 = document.getElementById("num2");
+    
+		// O uso de parâmteros é obrigatório
+		function soma(num1, num2){
+            // devolve a soma das duas variáveis
+			return num1 + num2;
+        }
+
+        btcalcular.addEventListener("click", calculaSoma);
+
+        function calculaSoma(){
+            n1 = parseFloat(n1.value);
+            n2 = parseFloat(n2.value);
+            document.getElementById("info").innerHTML = soma(n1, n2);
+            
+        }
+        /*
+            o utilizador pode inserir caracteres que não sejam algarismos, por exemplo,
+            letras, espaços ou outros.
+
+            Procura resolver este tipo de problemas utilizando a função isNAN().            
+        */
+        
+	</script>
+	
+	
+</body>
+</html>

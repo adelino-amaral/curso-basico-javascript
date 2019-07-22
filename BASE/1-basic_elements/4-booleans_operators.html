@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Operadores de Comparação</title>
+</head>
+<body>
+
+	<script>
+		var num1 = 2;
+		var num2 = 10;
+        var resultado;
+
+		resultado = num1 == num2;
+        document.write(num1 + " == " + num2 + " => "+resultado);
+		resultado = num1 != num2;
+        document.write("<br>" + num1 + " != " + num2 + " => "+resultado);
+        
+        // Apresenta os resultados das seguintes expressões
+		resultado = num1 < num2;
+		resultado = num1 <= num2;
+		resultado = num1 > num2;
+		resultado = num1 >= num2;
+
+		var num3 = "2";
+		resultado = num1 == num3; // 2 == "2"
+        document.write("<br>" + num1 + " === " + num3 + " => "+resultado);
+		resultado = num1 != num3;    // 2 != "2" 
+        document.write("<br>" + num1 + " !== " + num3 + " => "+resultado);
+
+        document.write("<br><br>");
+        
+		num3 = 2;
+		resultado = num1 === num3;    // 2 === 2
+        document.write("<br>" + num1 + " !== " + num3 + " => "+resultado);
+		resultado = num1 !== num3;    // 2 !== 2
+        document.write("<br>" + num1 + " !== " + num3 + " => "+resultado);
+		
+        // Quando num1 = 2 e num3 = "2", qual o resultado de 2 === "2"
+        
+		document.getElementById('info').innerHTML = resultado;
+
+		/*
+			Os operadores de comparação são muito utilizados e serão aplicados
+			quando se estudar a estrutura "if"
+		*/
+		
+	</script>
+
+    <p id="info"></p>
+    
+</body>
+</html>

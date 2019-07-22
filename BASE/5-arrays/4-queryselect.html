@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>querySelector</title>
+	<style>
+		#caixa1, #caixa2{
+			width: 200px;
+			height: 100px;
+			padding-left: 20px;
+			padding-top: 20px;
+		}
+
+		#caixa1 {
+			float: left;
+			background-color: gray;
+		}
+
+		#caixa2{
+			float: left;
+			background-color: yellow;
+			margin-left: 20px;
+		}
+
+		#caixa2 a {
+			display: block;
+		}
+
+		#caixa3{
+			width: 200px;
+			height: 70px;
+			clear: both;
+			padding-left: 150px;
+			padding-top: 20px;
+		}
+	</style>
+</head>
+<body>
+	
+	<div id="caixa1">
+		<a href="wwww.google.pt">Google</a><br>
+		<a href="www.sapo.pt" class="cor">Sapo</a><br>
+		<a href="www.youtube.com" class="cor">Youtube</a><br>
+		<a href="www.esenviseu.net" id="esen">ESEN</a><br><br>
+	</div>
+
+	<div id="caixa2">
+		<a href="www.google.com" class="marca">Google</a>
+		<a href="www.sapo.pt" class="marca">Sapo</a>
+		<a href="www.youtube.com" class="marca">Youtube</a>
+		<a href="www.esenviseu.net">Esen</a>
+	</div>
+
+	<div id="caixa3">
+		<button id="bt1">Clica-me</button>
+		<button id="bt2">Outro Clique</button>
+	</div>
+
+	<script>
+
+        document.getElementById("bt1").addEventListener("click", function(){
+			// só seleciona o link do sapo, porquê?
+
+			document.querySelector(".cor").style.backgroundColor = "yellow";
+			document.querySelector(".cor").style.border = "2px solid red";
+			document.querySelector("#esen").style.border = "1px solid red";
+		});
+
+
+        document.getElementById("bt2").addEventListener("click", function(){
+			// querySelectorAll - seleciona os elementos que tenham uma classe em comum
+
+			var elementos = document.querySelectorAll("a[class='marca']");
+			console.log(elementos.length);
+
+			for (var i = 0; i < elementos.length; i++) {
+				// altera a cor de fundo dos elementos selecionados
+				elementos[i].style.background = "blue";
+				elementos[i].style.color = "white";
+			}
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+@charset "utf-8";
+
+.red {  /* for error messages */
+   color: red;
+}
+ 
+input.error {  /* for the error input text fields */
+   border: 1px red inset;
+   padding: 2px;
+}
+
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+.container {
+   border-radius: 5px;
+   background-color: #f2f2f2;
+   padding: 20px;
+   margin: 0 auto;
+   width: 900px;
+} 
+
+table {
+   border: 0;
+   width: 100%;
+}
+ 
+td {
+   margin: 0;
+   padding: 3px 10px 3px 3px;
+}
+
+.col1{
+   width: 20%;
+}
+
+input[type=text], input[type=password]{
+  width: 100%;
+  padding: 6px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+select{
+   width: 50%;
+   height: 20px;
+   font-size: 1em;
+}
+
+input[type=radio], input[type=checkbox] {
+   height: 20px;
+   font-size: 1em;
+}
+
+
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+

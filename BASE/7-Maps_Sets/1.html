@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Maps</title>
+</head>
+<body>
+	
+	<script>
+		
+		var car = new Map();
+
+		car.set("brand", "Volkswagen");
+		car.set("name", "Golf");
+		car.set("color", "white");
+
+		console.log(car.get("brand"));
+		console.log(car.has("brand"));
+		car.delete("brand");
+		console.log(car);
+	</script>
+</body>
+</html>

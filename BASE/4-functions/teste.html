@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+   <input type="text" id="cx">
+   <div id="result"></div>
+   
+    <script>
+        
+    document.getElementById('cx').addEventListener("change", function(){
+        document.getElementById('result').innerHTML = document.getElementById('cx').value;
+    });
+    
+    </script>
+</body>
+</html>

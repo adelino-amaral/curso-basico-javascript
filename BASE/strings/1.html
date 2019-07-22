@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Strings</title>
+</head>
+<body>
+	
+	<span id="info"></span>
+	<p id="idfrase"></p>
+	<p id="fraselonga"></p>
+	
+	<script>
+		
+		/*
+			Uma string é um conjunto de caracteres envolvida entre " ou '.
+		*/
+		var nome = "Adelino";		
+		document.getElementById("info").innerHTML = "O nome " + nome + " tem " + nome.length + " caracteres.";
+
+		/*
+			Como uma string pode ficar entre "" então é preciso alguns cuidados.
+			Scape characters:
+			\'
+			\"
+			\\
+			\b
+			\r
+			\n
+			\f
+			\t
+			\v
+		*/
+		var frase = "A nossa turma é de \"Multimédia\"";
+		document.getElementById("idfrase").innerHTML = frase;
+
+		// O caracter \ permite repartir a frase por várias linhas
+		document.getElementById("fraselonga").innerHTML = "Este é um tipo de frase \
+															muito muito muito muito longa";
+
+	</script>	
+</body>
+</html>

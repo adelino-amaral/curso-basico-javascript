@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>while</title>
+</head>
+<body>
+    <section id="lista"></section>
+
+    <script>
+        document.getElementById('lista').innerHTML += "Números ímpares: <br>";
+        
+        var contador = 1;
+        do{
+
+            document.getElementById('lista').innerHTML += contador + "<br>";
+
+            contador = contador + 2;
+
+        }while(contador < 10)
+    </script>
+</body>
+</html>

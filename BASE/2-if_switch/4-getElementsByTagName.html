@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cumprimento diário</title>
+</head>
+<body>
+    
+    <p></p>
+    <p></p>
+    
+    <script>
+        let x = "";
+        /* 
+            The Date object is used to work with dates and times.
+            Date objects are created with new Date().
+            https://www.w3schools.com/jsref/jsref_obj_date.asp
+        */
+        let hoje = new Date();
+
+        // the method getHours() returns the hour (from 0-23) of date object.
+        let hora = hoje.getHours();
+        
+        if (hora < 12) {
+            x="bom dia";
+        } else {
+            x = "boa tarde";
+        }
+        
+        // seleciona o primeiro parágrafo
+        document.getElementsByTagName("p")[0].innerHTML = "Olá,";
+
+        // seleciona o segundo parágrafo
+        document.getElementsByTagName("p")[1].innerHTML = x;
+
+    </script>
+</body>
+</html>

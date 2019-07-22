@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Boolean</title>
+</head>
+<body>
+	<div id="info"></div>
+	
+	<script>
+		/*
+			Outro exemplo que utiliza uma variável booleana
+		*/
+		var cliente = "Adelino";
+		var finalizar = true;
+
+		while(finalizar)
+		{
+			var nome = prompt("Insira o seu nome:");
+			if(nome === cliente)
+			{
+				document.getElementById("info").innerHTML = "Cliente " + cliente + " foste encontrado";
+				finalizar = false;
+			}
+		}
+	</script>
+</body>
+</html>

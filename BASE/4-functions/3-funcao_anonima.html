@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>for</title>
+</head>
+<body>
+    
+    <div id="contador"></div>
+    
+    <script>
+        
+        /*
+            Outra forma de definir funções, chamadas funções anónimas.
+            Chamam-se funções anónimas porque não existe um nome à frente
+            da palavra reservada function.
+
+            Neste exemplo a função passa a chamar-se conta.
+        */
+        conta = function(){
+            // guarda o resultado de cada iteração do ciclo
+            var resultado = "";
+            
+            // contagem dos números de 0 a 10
+            for(var i=0; i <= 10; i++){
+                resultado = resultado + i + "<br>";
+            }
+            // devolve os valores guardados no ciclo
+            return resultado;
+        }
+        
+
+        /*
+            exercício:
+            cria uma função que liste em linha os múltiplos de 5 até 100.
+            5 10 15 20 25 30 35 40 45 ....
+        */
+        
+        
+        
+        // CHAMADA DAS FUNÇÕES
+        document.getElementById("contador").innerHTML = conta();
+        
+    </script>
+</body>
+</html>

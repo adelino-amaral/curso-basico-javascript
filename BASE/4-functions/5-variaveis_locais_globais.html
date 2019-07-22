@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Variáveis locais e globais</title>
+</head>
+<body>
+	
+	<p id="nome_modelo"></p>
+	<P id="marca"></P>
+	<p id="idade"></p>
+
+	<script>
+
+		'use strict';
+
+		/*
+			variáveis declaradas dentro da função não são visíveis (acessíveis) fora da função.
+			Estas variáveis chamam-se locais.
+		*/
+		function modeloCarro(){
+			var modelo = "308";
+		}
+
+		modeloCarro();
+		// observa a descrição do erro devolvido.
+		document.getElementById('nome_modelo').innerHTML = modelo;
+
+
+
+	</script>
+</body>
+</html>

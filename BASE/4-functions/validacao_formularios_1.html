@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+	<p>Insira um número e clicque no botão OK:</p>
+
+	<input id="id1" type="number" min="100" max="300" required>
+	<button onclick="myValidate()">OK</button>
+
+	<p>Se o número for inferior a 100 e superior a 300 será visualizada uma mensagem de erro.</p>
+
+	<p id="demo"></p>
+
+	<script>
+		function myValidate() {
+		    var inputNumber = document.getElementById("id1");
+
+		    if (inputNumber.checkValidity() == false) {
+
+		        document.getElementById("demo").innerHTML = inputNumber.validationMessage;
+
+		    } else {
+		    	
+		        document.getElementById("demo").innerHTML = "Input OK";
+		    } 
+		} 
+	</script>
+
+</body>
+</html>

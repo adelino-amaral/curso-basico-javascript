@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Parâmetros</title>
+</head>
+<body>
+	<p id="info"></p>
+	<script>
+		
+		function device(type, name, brand){
+
+			document.getElementById("info").innerHTML = `O ${type} ${name} é da marca ${brand}`;
+
+		}
+
+		var cellphone = new Array("Smartphone", "Iphone", "Apple");
+
+		device(...cellphone);
+	</script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Funções</title>
+</head>
+<body>
+    
+    <script>
+        var number1 = 1000;
+        var number2 = 66;
+        var result;
+        var findTotal;
+        
+        // definição da função. Estamos atribuir a função à variável findTotal
+        // função anónima
+        findTotal = function(){
+            result = number1 + number2;
+        }
+        
+        // chamada da função
+        findTotal();
+        
+        console.log(number1 + " + " + number2 + " = " + result);
+        
+        var displayMenu;
+        
+        displayMenu = function(){
+            console.log("Escolha uma opção:");
+            console.log("(1) Imprime Log");
+            console.log("(2) Upload Ficheiro");
+            console.log("(9) Sair");
+        }
+        
+        displayMenu();
+        
+        // mudar a referência da função
+        var menu = displayMenu;
+        menu();
+    </script>
+</body>
+</html>

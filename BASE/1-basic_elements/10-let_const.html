@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Let</title>
+</head>
+<body>
+    <script>
+        var numero = 1
+
+        // {} - define um bloco
+        {
+            let numero = 2
+            console.log('dentro = ', numero)
+        }
+        
+        // variável afetada pelo var
+        console.log('fora = ', numero)
+
+
+        // Quando estudarmos funções vamos analisar outras situações
+
+        // ##
+        // ## Conceitos avançados
+        // ##
+        const a = 7
+        let b = 3
+
+        b += a // b = b + a
+        console.log(b)
+
+        b -= 4 // b = b - 4
+        console.log(b)
+
+        b *= 2 // b = b * 2
+        console.log(b)
+
+        b /= 2 // b = b / 2
+        console.log(b)
+
+        b %= 2 // b = b % 2
+        console.log(b)
+
+        // --------------------------------------------
+        const peso1 = 1.0
+        const peso2 = 1.1
+        const peso3 = Number('2.0')
+
+        console.log(peso1, peso2, peso3)
+        // verifica se a variável peso1 é inteira
+        console.log(Number.isInteger(peso1))
+        console.log(Number.isInteger(peso2))
+
+
+        const avaliacao1 = 9.7676
+        const avaliacao2 = 6.753
+
+        const total = avaliacao1 * peso1 + avaliacao2 * peso2
+        const media = total / (peso1 + peso2)
+
+        // Cuidado, o valor da variável media não muda
+        console.log(media.toFixed(2))   // arredonda a 2 casas decimais
+        console.log(media.toString())
+
+        // converter o valor da variável media para binário
+        console.log(media.toString(2))
+        console.log(typeof media)
+
+        console.log(Number)
+
+        // Cuidado com os números
+        console.log(7/0)
+
+        console.log("10"/2)
+
+        console.log("Show" * 2)
+
+        // uma imprecisão documentada
+        console.log(0.1 + 0.7)
+
+        // console.log(10.toString())  --> dá erro
+        console.log((10).toString())
+
+        let age = 19;
+        let NAME = "Pedro";
+        let local = "Viseu";
+        console.log(`Chamo-me ${NAME}, tenho ${age} e vivo em ${local}`)
+    </script>
+</body>
+</html>

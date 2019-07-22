@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>checkbox</title>
+</head>
+<body>
+	<form onsubmit="return validar();" action="" name="nform">
+		<input type="checkbox" name="ce" id="ce">
+		<input type="submit" value="Enviar">
+	</form>
+	<div id="info"></div>
+
+	<script>
+		
+
+		function validar(){
+			var elemento = document.forms["nform"]["ce"].checked;
+			console.log(elemento);
+			if(elemento == true){
+				document.getElementById("info").innerHTML= "O elemento foi selecionado";
+				return false; // para evitar o envio do formulário por defeito
+			}else {
+				document.getElementById("info").innerHTML= "O elemento não foi selecionado";
+				return false;
+			}
+		}
+	</script>
+</body>
+</html>

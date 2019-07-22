@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Recursividade</title>
+</head>
+<body>
+	<script>
+		var numero =parseInt(prompt("Insira um número"));
+		document.write("O fatorial do número " + numero + " é " + fatorial(numero));
+
+		function fatorial(numero){
+			if(numero <= 1){
+				return 1;
+			}else {
+				return numero * fatorial(numero-1);
+			}
+		}
+	</script>
+</body>
+</html>

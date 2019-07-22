@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Passagem de valores à função</title>
+</head>
+<body>
+
+	<p id="info"></p>
+	<input type="button" value="Calcular Soma" id="btsoma"><br>
+    <input type="button" value="Calcular Multiplicação" id="btmultiplica">
+
+    <div id="info2"></div>
+
+	<script>
+
+        var multiplicacao = function(num1, num2){
+        	return num1 * num2;
+        }
+
+        // parâmteros com valores predefinidos.
+        // Neste tipo de funções pode ou não chamar a função com parâmteros.
+        var soma = function(num1=100, num2=20){
+			return num1 + num2;
+		}
+
+        
+        // Repare que as seguintes funções não devolvem informação. Porquê?
+        var mostraSoma = function(){
+            document.getElementById('info').innerHTML = soma();    
+        }
+
+        var mostraMultiplicacao = function(){
+            document.getElementById("info2").innerHTML = multiplicacao(5, 60);
+        }
+        
+        // definição dos eventos
+        btsoma.addEventListener("click", mostraSoma);
+        btmultiplica.addEventListener("click", mostraMultiplicacao);
+
+        /*
+            EXERCÍCIO:
+            Constrói uma função com o nome verificaVelocidade, deve aceitar o parâmetro velocidade
+            e devolver a mensagem: "ultrapassou o limite de velocidade" ou 
+            "não ultrapassou o limite de velocidade".
+            Dentro das localidades o limite é 50 e fora das localidades o limte é 90.
+        */
+	</script>
+	
+	
+</body>
+</html>

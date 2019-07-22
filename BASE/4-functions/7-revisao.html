@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Passagem de valores à função</title>
+</head>
+<body>
+    
+    <script>
+        var showMessage = function(message){
+            console.log("A mensagem é: " + message);
+        }
+        
+        showMessage("Curso de Multimédia");
+        showMessage("Estamos a estudar Javascript");
+        
+        square = function(number){
+            var result;
+            result = number * number;
+            console.log(number + " * " + number + " = " + result);
+        }
+        square(3);
+        square(-2);
+        square(0.5);
+        
+        var showSum = function(num1, num2){
+            return num1 + num2;
+        }
+        console.log(showSum(5, 10));
+        
+        var result = sum = showSum(50, 10);
+        console.log(result);
+        
+    </script>
+</body>
+</html>

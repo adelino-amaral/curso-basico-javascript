@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Objetos</title>
+</head>
+<body>
+
+	<p id="democarro"></p>
+	<p id="demopessoa"></p>
+	<script>
+		
+		/*
+			Na vida real, um carro é um objeto.
+			Cada carro tem um conjunto de propriedades, por exemplo cor e peso,
+			e um conjunto de métodos (ações), por exemplo arrancar ou parar.
+
+			Os objetos guardam um conjunto devalores, cada valor escrito no formato nome:valor
+		*/
+		var carro = {
+			tipo:"Fiat", 
+			modelo:"500", 
+			cor:"white"
+		};
+
+		document.getElementById("democarro").innerHTML = carro.tipo;
+
+		/*
+			Uma pessoa também é considerada um objeto, pois tem propriedades e métodos.
+		*/
+		var pessoa = {
+			nome: "Adelino",
+			apelido: "Amaral",
+			idade: 90,
+			cor: "branco",
+
+			nomeCompleto: function(){
+				return this.nome + " " + this.apelido;
+			},
+
+			verIdade: function(){
+				return this.idade;
+			}
+
+		};
+		document.getElementById('demopessoa').innerHTML = pessoa.nomeCompleto() + " tem " + pessoa.verIdade() + " anos.";
+
+	</script>
+</body>
+</html>

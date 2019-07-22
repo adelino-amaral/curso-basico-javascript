@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>var & let</title>
+    <script>
+        var x = 1;
+        if (true) {
+          var x = 2;  // same variable!
+          console.log(x);  // 2
+        }
+        console.log(x);  // 2
+      
+        let y = 1;
+        if (true) {
+          let y = 2;  // pertence ao bloco do if
+          console.log(y);  // 2
+        }
+        console.log(y);  // 1, ,pertence aobloco da função
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

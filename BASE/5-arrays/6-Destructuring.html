@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Destructuring Assignment</title>
+</head>
+<body>
+	
+	<script>
+		
+		var animals = new Array("Cão", "Gato", "Rato");
+
+		// em vez de: (widtout Destructuring)
+		/*
+		var cao = animals[0];
+		var gato = animals[1];
+		var rato = animals[2];
+		*/
+
+		// destruturação (with Destructuring)
+		var [cao, gato, rato] = animals;
+		
+		console.log(cao, gato, rato);
+	</script>
+</body>
+</html>

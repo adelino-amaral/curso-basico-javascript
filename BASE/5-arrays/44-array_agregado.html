@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Agregar elementos</title>
+</head>
+<body>
+
+	<div id="info"></div>
+
+	<script>
+		
+
+	var lista = ["vermelho", "azul", "verde", "branco"];
+	var cores = "";
+
+
+	for(var i=0; i < lista.length; i++){
+		//document.write(lista[i] + " ");
+		cores += "<li>" + lista[i] + "</li>";
+		console.log(cores);
+	}
+
+	document.getElementById("info").innerHTML = "<ol>" + cores + "</ol>";
+	</script>
+</body>
+</html>
