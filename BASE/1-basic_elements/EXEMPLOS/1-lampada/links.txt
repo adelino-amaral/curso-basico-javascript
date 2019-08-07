@@ -1,8 +1,0 @@
-
-Exemplos
-http://www.w3schools.com/howto/default.asp
-
-
-Trabalhar com canvas
-https://html2canvas.hertzen.com/
-

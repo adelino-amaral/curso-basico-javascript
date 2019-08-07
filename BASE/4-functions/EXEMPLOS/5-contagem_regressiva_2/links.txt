@@ -1,2 +1,0 @@
-Livraria para contador de tempo
-http://flipclockjs.com/
